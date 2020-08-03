@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+@import url(//db.onlinewebfonts.com/c/229a57bbeef591e04a1fdfe347c90864?family=Centra+No2);
+
+html {
+  box-sizing: border-box;
+  background: #011563;
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.align-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.site-wrap {
+  max-width: 70%;
+  margin: 70px auto;
+  background: white;
+  padding: 40px;
+  text-align: justify;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+}
+
+body.fixed-nav .site-wrap {
+  transform: scale(1);
+}
+
+header {
+  font-family: 'Raleway';
+  font-size: 50px;
+}
+
+.panels {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+.panel {
+  background: #6B0F9C;
+  padding: 20%;
+  color: white;
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.863);
+}
+
+.panel1 { background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('Images/beleza.png'); }
+
+h1 {
+  color: white;
+  font-size: 7vw;
+  text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
+}
+
+nav {
+  background: white;
+  top: 0;
+  transition:all 0.2s;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  z-index: 1;
+  height: 120px;
+  transition:all 0.1s;
+}
+
+body.fixed-nav nav {
+  position: fixed;
+  box-shadow: 0 5px 0 rgba(0,0,0,0.1);
+  height: 60px;
+}
+
+nav ul {
+  display: flex;
+
+}
+
+nav li {
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  float: right;
+}
+
+li.logo { 
+  display: flex;  
+  min-width: 73%;
+  min-height: 150%;
+  overflow: hidden;
+  background: white;
+  background-image:url(https://cdn.shopify.com/s/files/1/0426/8271/2216/files/Beleza_Coffee_2048x.png?v=1596301511);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  top: -20px;
+  right: 50px;
+  transition:all 0.05s;
+}
+
+li.logo a {
+  color: white;
+}
+
+.fixed-nav li.logo {
+  min-width: 45%;
+  min-height: 60px;
+  max-height: 60px; 
+  background-position-y: 0%; 
+  position: relative;
+  top: -20px;
+  transition:all 0.05s;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 20px;
+  color: black;
+  transition: all 0.1s;
+  text-transform: uppercase;
+}
+
+.myButton {
+	box-shadow: 0px 4px 6px 1px #f0f7fa;
+	background:linear-gradient(to bottom, #011563 5%, #011563c4 100%);
+  border-radius:24px;
+	border:1px solid #057fd0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:7px 24px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5b6178;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+	background-color:#019ad2;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
